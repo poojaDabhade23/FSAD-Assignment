@@ -1,0 +1,162 @@
+.profilepg-section {
+  height: 100vh;
+}
+
+.profile-page {
+  padding: 10% 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.profilepg-left {
+  width: 90%;
+}
+
+.profilepg-top {
+  padding-bottom: 5%;
+  border-radius: 25px;
+}
+
+.banner-div {
+  position: relative;
+}
+
+.banner-img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+}
+
+.profile-photo {
+  width: 15vh;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -25%;
+  left: 5%;
+}
+
+.name-div {
+  margin: 10% 0 0 5%;
+}
+
+.name-div h1 {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.name-div h2 {
+  font-size: 1.15vw;
+  color: gray;
+  font-style: italic;
+}
+
+.reading-banner {
+  margin: 3% 0;
+  border-radius: 25px;
+}
+
+.edit-profile-button {
+  background-color: rgb(27, 55, 131);
+  color: white;
+  border-radius: 10px;
+  padding: 0.5% 4%;
+  margin-top: 2%;
+  font-size: 1.1vw;
+}
+
+/* .profilepg-bottom {
+  height: 50%;
+} */
+
+.profilepg-right {
+  width: 90%;
+  padding: 5% 15%;
+  border-radius: 25px;
+}
+
+.profilepg-right h1 {
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 4%;
+  text-align: center;
+}
+
+.profile-input {
+  margin: 5% 0;
+}
+
+.profile-input label {
+  font-size: 1.1vw;
+}
+
+.profile-input input {
+  width: 100%;
+  border: 1px solid gray;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  padding: 0 2%;
+}
+
+.profilepg-right button {
+  background-color: rgb(27, 55, 131);
+  color: white;
+  border-radius: 10px;
+  padding: 0.8% 6%;
+  margin-top: 1%;
+  font-size: 1.1vw;
+}
+
+@media (max-width: 850px) {
+  .profile-page {
+    grid-template-columns: 1fr;
+    padding: 10%;
+  }
+
+  .profilepg-left {
+    width: 100%;
+  }
+
+  .profilepg-right {
+    width: 100%;
+  }
+
+  .profilepg-bottom {
+    display: none;
+  }
+
+  .profilepg-right {
+    margin-top: 3%;
+  }
+
+  .name-div h1 {
+    font-size: 4vw;
+  }
+
+  .name-div h2 {
+    font-size: 3vw;
+  }
+
+  .edit-profile-button {
+    font-size: 2vw;
+  }
+
+  .profilepg-right h1 {
+    font-size: 3.5vw;
+  }
+
+  .profile-input label {
+    font-size: 2.1vw;
+  }
+
+  .profilepg-right button {
+    font-size: 2vw;
+  }
+}

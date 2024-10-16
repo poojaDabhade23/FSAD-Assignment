@@ -1,0 +1,150 @@
+.uploadBook-section {
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  background-color: rgb(30 58 138);
+  height: 100vh;
+}
+
+.bookUpload-div {
+  background-color: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  padding: 2% 5%;
+  width: 50vw;
+  position: relative;
+}
+
+.upload-book-close-button {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+.upload-book-close-icon {
+  color: gainsboro;
+}
+
+.bookUpload-div h1 {
+  font-size: 3vw;
+  margin-bottom: 3%;
+}
+
+.upload-button-div {
+  margin: 5% 0;
+}
+
+.book-upload-button {
+  background-color: rgb(27, 55, 131);
+  box-shadow: 2px 2px rgb(162, 162, 162);
+  border-radius: 50px;
+  width: 60%;
+  height: auto;
+  padding: 1%;
+  margin: 1% 20%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+.book-upload-button:hover {
+  background-color: rgb(49, 76, 149);
+  box-shadow: 2px 2px rgb(172, 172, 172);
+}
+
+.book-upload-button:active {
+  background-color: rgb(30, 51, 111);
+  box-shadow: 2px 2px rgb(123, 123, 123);
+}
+
+.upload-book-input {
+  border: 1px solid rgb(27, 55, 131);
+  padding: 1%;
+  margin: 2% 0%;
+  border-radius: 10px;
+}
+
+.upload-book-input input {
+  outline: none;
+  width: 100%;
+  height: fit-content;
+  color: rgb(27, 55, 131);
+  padding: 0% 1%;
+}
+
+.upload-book-input select {
+  outline: none;
+  width: 100%;
+  color: rgb(27, 55, 131);
+  padding: 0% 1%;
+}
+
+.upload-bookimg {
+  border: 1px dashed rgb(27, 55, 131);
+  padding: 7%;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cloud-icon {
+  color: gainsboro;
+}
+
+.upload-bookimg p {
+  color: rgb(208, 204, 204);
+  margin: 2%;
+}
+
+.upload-bookimg input {
+  margin-left: 15%;
+}
+
+@media (max-width: 900px) {
+  .bookUpload-div {
+    width: 70vw;
+  }
+
+  .bookUpload-div h1 {
+    font-size: 4.5vw;
+  }
+
+  .book-upload-button {
+    margin: 0% 20%;
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .bookUpload-div {
+    width: 80vw;
+  }
+
+  .bookUpload-div h1 {
+    font-size: 5.5vw;
+  }
+
+  .book-upload-button {
+    font-size: 3.3vw;
+  }
+}
+
+@media (max-width: 525px) {
+  .bookUpload-div {
+    width: 90vw;
+    border-radius: 0px;
+    padding: 5%;
+  }
+
+  .bookUpload-div h1 {
+    font-size: 5.5vw;
+  }
+
+  .book-upload-button {
+    margin: 0% 20%;
+    font-size: 3.5vw;
+  }
+}
