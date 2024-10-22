@@ -20,7 +20,7 @@ router.post("/register", (request, response) => {
     .catch((err) => console.log(err));
 });
 
-//Route for verify user
+//Route for verify user identity
 export const verifyUser = (request, response, next) => {
   const token = request.cookies.token;
   if (!token) {

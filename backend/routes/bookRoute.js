@@ -62,18 +62,16 @@ router.get("/getBook", (request, response) => {
 router.get("/searchBooks", (request, response) => {
   const { name, author, categories } = request.query;
 
-  // Create an empty filter object
   let filter = {};
 
-  // Add conditions to the filter object based on the query parameters
   if (name) {
-    filter.name = { $regex: name, $options: "i" }; // Case-insensitive search
+    filter.name = { $regex: name, $options: "i" };
   }
   if (author) {
-    filter.author = { $regex: author, $options: "i" }; // Case-insensitive search
+    filter.author = { $regex: author, $options: "i" };
   }
   if (categories) {
-    filter.categories = { $regex: categories, $options: "i" }; // Case-insensitive search
+    filter.categories = { $regex: categories, $options: "i" };
   }
 
   // Find books that match the filter criteria
